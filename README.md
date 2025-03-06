@@ -42,8 +42,15 @@ To use the task generator, follow these steps:
 
 1. Clone the repository and submodules:
     ```bash
-    git clone https://github.com/Plyncesilva/Taskset-Generator.git
+    git clone https://github.com/Plyncesilva/Taskset-Generator-Exercise.git
     cd Taskset-Generator
+    ```
+
+2. Create a virtual environment and install dependencies:
+    ```bash
+    python -m venv .venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    pip install -r requirements.txt
     ```
 
 ### Running the Generator
@@ -62,6 +69,14 @@ To remove previously generated task sets:
 
 ```bash
 python generator.py clean
+```
+
+### Running the tests
+
+To run the test suite:
+
+```bash
+python -m pytest
 ```
 
 ### Output Directory
