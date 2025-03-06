@@ -1,0 +1,6 @@
+Name,Size,Utilization,UniquePeriods,PriorityAssignment
+Example_Low_Utilization,10,0.1,true,RM
+Example_Medium_Utilization,8,0.5,false,RM
+Example_High_Utilization,5,0.8,true,RM
+Example_Full_Utilization,11,1.0,false,RM
+Example_Over_Utilization,2,1.2,true,RM
