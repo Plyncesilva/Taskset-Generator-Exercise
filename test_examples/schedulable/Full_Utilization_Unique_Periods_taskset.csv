@@ -1,0 +1,4 @@
+Task,BCET,WCET,Period,Deadline,Priority
+Task_0,6,21,50,50,1
+Task_1,5,13,100,100,2
+Task_2,4,9,20,20,0
