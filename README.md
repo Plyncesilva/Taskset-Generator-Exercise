@@ -2,17 +2,15 @@
 
 ## Overview
 
-The Task Generator is a utility for creating real-time periodic task sets based on specified requirements. It's designed for testing and evaluating the simulator and RTA for the exercise by generating tasks with utilization levels and periods constraints.
+The Task Generator is a utility for creating real-time periodic task sets based on specified requirements. It's designed for testing and evaluating the simulator and RTA for the exercise by generating tasksets with specified utilization levels and periods constraints.
 
-## Key Components
+The tool is not able to generate schedulable / not schedulable tasksets, it only enforces utilization and period constraints, however:
 
-- **TaskGenerator**: Main class that generates task sets based on requirements
-- **TaskRequirements**: Contains specifications for the task sets to be generated
-- **Requirement**: Individual specification for a single task set
+**Some tasksets with known schedulability / non-schedulability are placed in the `test_examples` folder so you can better validate your RTA implementation**
 
 ## Configuration File Format
 
-The generator uses a CSV configuration file with the following columns:
+The generator uses a CSV configuration file (check examples in the `config.csv`) with the following columns:
 
 | Column | Description |
 |--------|-------------|
@@ -22,25 +20,13 @@ The generator uses a CSV configuration file with the following columns:
 | UniquePeriods | Whether each task should have a unique period (true/false) |
 | PriorityAssignment | Scheduling algorithm to use (currently only supports "RM" for Rate Monotonic) |
 
-### Example Configuration:
-```csv
-Name,Size,Utilization,UniquePeriods,PriorityAssignment
-Example_Low_Utilization,5,0.2,true,RM
-Example_Medium_Utilization,8,0.5,false,RM
-Example_High_Utilization,12,0.8,true,RM
-Example_Full_Utilization,10,1.0,false,RM
-Example_Overutilization,6,1.2,false,RM
-```
-
-This configuration generates 5 different task sets, ranging from low utilization to overutilization systems.
-
 ## Usage
 
 To use the task generator, follow these steps:
 
 ### Installation
 
-1. Clone the repository and submodules:
+1. Clone the repository:
     ```bash
     git clone https://github.com/Plyncesilva/Taskset-Generator-Exercise.git
     cd Taskset-Generator
@@ -50,7 +36,7 @@ To use the task generator, follow these steps:
     ```bash
     python -m venv .venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
-    pip install -r requirements.txt
+    python -m pip install -r requirements.txt
     ```
 
 ### Running the Generator
@@ -81,10 +67,7 @@ python -m pytest
 
 ### Output Directory
 
-Task sets are stored in the `tests/generated` directory by default, organized into subdirectories:
-- `schedulable` - Contains task sets that are schedulable
-- `not_schedulable` - Contains task sets that are unschedulable
-
+Task sets are stored in the `output_generated` directory by default, organized into subdirectories.
 Each subdirectory further organizes task sets by utilization level.
 
 ### Unique Periods and Hyperperiod Considerations
