@@ -1,0 +1,32 @@
+TaskSet:
+Hyperperiod = 4800
+CPU Worst Case Utilization = 0.85
+Task(T1, BCET=1, WCET=3, Period=40, Deadline=40, Utilization=0.07 Core=0, Priority=1, Type=TT, MIT=0, Server=None)
+Task(T2, BCET=2, WCET=7, Period=80, Deadline=80, Utilization=0.09 Core=0, Priority=2, Type=TT, MIT=0, Server=None)
+Task(T3, BCET=1, WCET=13, Period=100, Deadline=100, Utilization=0.13 Core=0, Priority=3, Type=TT, MIT=0, Server=None)
+Task(T4, BCET=3, WCET=18, Period=160, Deadline=160, Utilization=0.11 Core=0, Priority=4, Type=TT, MIT=0, Server=None)
+Task(T5, BCET=1, WCET=22, Period=200, Deadline=200, Utilization=0.11 Core=0, Priority=5, Type=TT, MIT=0, Server=None)
+Task(T6, BCET=5, WCET=27, Period=300, Deadline=300, Utilization=0.09 Core=0, Priority=6, Type=TT, MIT=0, Server=None)
+Task(T7, BCET=8, WCET=29, Period=320, Deadline=320, Utilization=0.09 Core=0, Priority=7, Type=TT, MIT=0, Server=None)
+Task(T8, BCET=10, WCET=34, Period=400, Deadline=400, Utilization=0.09 Core=0, Priority=8, Type=TT, MIT=0, Server=None)
+Task(T9, BCET=22, WCET=35, Period=480, Deadline=480, Utilization=0.07 Core=0, Priority=9, Type=TT, MIT=0, Server=None)
+
+Response Time Analysis
+  Scheduling Algorithm: RateMonotonic
+  Schedulable: True
+  Hyperperiod: 4800
+  Utilization: 0.85
+  Status: (✓=schedulable, ✗=not schedulable)
+
+Task  WCRT   Deadline  Status
+----  -----  --------  ------
+ T1    3.0      40       ✓   
+ T2    10.0     80       ✓   
+ T3    23.0    100       ✓   
+ T4    44.0    160       ✓   
+ T5    66.0    200       ✓   
+ T6   116.0    300       ✓   
+ T7   148.0    320       ✓   
+ T8   258.0    400       ✓   
+ T9   296.0    480       ✓   
+----  -----  --------  ------

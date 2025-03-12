@@ -1,0 +1,38 @@
+TaskSet:
+Hyperperiod = 600
+CPU Worst Case Utilization = 1.00
+Task(Task_0, BCET=6, WCET=13, Period=100, Deadline=100, Utilization=0.13 Core=0, Priority=6, Type=TT, MIT=0, Server=None)
+Task(Task_1, BCET=6, WCET=22, Period=200, Deadline=200, Utilization=0.11 Core=0, Priority=8, Type=TT, MIT=0, Server=None)
+Task(Task_2, BCET=1, WCET=2, Period=25, Deadline=25, Utilization=0.08 Core=0, Priority=1, Type=TT, MIT=0, Server=None)
+Task(Task_3, BCET=2, WCET=6, Period=50, Deadline=50, Utilization=0.12 Core=0, Priority=2, Type=TT, MIT=0, Server=None)
+Task(Task_4, BCET=0, WCET=1, Period=20, Deadline=20, Utilization=0.05 Core=0, Priority=0, Type=TT, MIT=0, Server=None)
+Task(Task_5, BCET=1, WCET=3, Period=60, Deadline=60, Utilization=0.05 Core=0, Priority=5, Type=TT, MIT=0, Server=None)
+Task(Task_6, BCET=14, WCET=33, Period=300, Deadline=300, Utilization=0.11 Core=0, Priority=9, Type=TT, MIT=0, Server=None)
+Task(Task_7, BCET=1, WCET=2, Period=50, Deadline=50, Utilization=0.04 Core=0, Priority=2, Type=TT, MIT=0, Server=None)
+Task(Task_8, BCET=2, WCET=9, Period=100, Deadline=100, Utilization=0.09 Core=0, Priority=6, Type=TT, MIT=0, Server=None)
+Task(Task_9, BCET=5, WCET=21, Period=300, Deadline=300, Utilization=0.07 Core=0, Priority=9, Type=TT, MIT=0, Server=None)
+Task(Task_10, BCET=9, WCET=42, Period=600, Deadline=600, Utilization=0.07 Core=0, Priority=11, Type=TT, MIT=0, Server=None)
+Task(Task_11, BCET=1, WCET=4, Period=50, Deadline=50, Utilization=0.08 Core=0, Priority=2, Type=TT, MIT=0, Server=None)
+
+Response Time Analysis
+  Scheduling Algorithm: RateMonotonic
+  Schedulable: True
+  Hyperperiod: 600
+  Utilization: 1
+  Status: (✓=schedulable, ✗=not schedulable)
+
+Task     WCRT   Deadline  Status
+-------  -----  --------  ------
+ Task_0   34.0    100       ✓   
+ Task_1   87.0    200       ✓   
+ Task_2   3.0      25       ✓   
+ Task_3   9.0      50       ✓   
+ Task_4   1.0      20       ✓   
+ Task_5   18.0     60       ✓   
+ Task_6  185.0    300       ✓   
+ Task_7   11.0     50       ✓   
+ Task_8   44.0    100       ✓   
+ Task_9  290.0    300       ✓   
+Task_10  600.0    600       ✓   
+Task_11   15.0     50       ✓   
+-------  -----  --------  ------

@@ -1,0 +1,36 @@
+TaskSet:
+Hyperperiod = 600
+CPU Worst Case Utilization = 1.00
+Task(T1, BCET=0, WCET=1, Period=15, Deadline=15, Utilization=0.07 Core=0, Priority=1, Type=TT, MIT=0, Server=None)
+Task(T2, BCET=1, WCET=2, Period=20, Deadline=20, Utilization=0.10 Core=0, Priority=2, Type=TT, MIT=0, Server=None)
+Task(T3, BCET=2, WCET=3, Period=25, Deadline=25, Utilization=0.12 Core=0, Priority=3, Type=TT, MIT=0, Server=None)
+Task(T4, BCET=2, WCET=4, Period=30, Deadline=30, Utilization=0.13 Core=0, Priority=4, Type=TT, MIT=0, Server=None)
+Task(T5, BCET=3, WCET=5, Period=50, Deadline=50, Utilization=0.10 Core=0, Priority=5, Type=TT, MIT=0, Server=None)
+Task(T6, BCET=3, WCET=5, Period=60, Deadline=60, Utilization=0.08 Core=0, Priority=6, Type=TT, MIT=0, Server=None)
+Task(T7, BCET=4, WCET=6, Period=75, Deadline=75, Utilization=0.08 Core=0, Priority=7, Type=TT, MIT=0, Server=None)
+Task(T8, BCET=5, WCET=9, Period=100, Deadline=100, Utilization=0.09 Core=0, Priority=8, Type=TT, MIT=0, Server=None)
+Task(T9, BCET=3, WCET=12, Period=120, Deadline=120, Utilization=0.10 Core=0, Priority=9, Type=TT, MIT=0, Server=None)
+Task(T10, BCET=5, WCET=11, Period=150, Deadline=150, Utilization=0.07 Core=0, Priority=10, Type=TT, MIT=0, Server=None)
+Task(T11, BCET=6, WCET=15, Period=300, Deadline=300, Utilization=0.05 Core=0, Priority=11, Type=TT, MIT=0, Server=None)
+
+Response Time Analysis
+  Scheduling Algorithm: RateMonotonic
+  Schedulable: False
+  Hyperperiod: 600
+  Utilization: 1
+  Status: (✓=schedulable, ✗=not schedulable)
+
+Task  WCRT   Deadline  Status
+----  -----  --------  ------
+ T1    1.0      15       ✓   
+ T2    3.0      20       ✓   
+ T3    6.0      25       ✓   
+ T4    10.0     30       ✓   
+ T5    15.0     50       ✓   
+ T6    23.0     60       ✓   
+ T7    37.0     75       ✓   
+ T8    49.0    100       ✓   
+ T9    98.0    120       ✓   
+T10   197.0    150       ✗   
+T11   580.0    300       ✗   
+----  -----  --------  ------
