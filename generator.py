@@ -12,8 +12,7 @@ def parse_args():
         
     command = sys.argv[1]
     # Get the base output directory from env var and remove any trailing slashes
-    base_output_folder = 'tests'
-    output_folder = f"{base_output_folder}/generated"
+    output_folder = f"output_generated"
 
     if command == "clean":
         if os.path.exists(output_folder):

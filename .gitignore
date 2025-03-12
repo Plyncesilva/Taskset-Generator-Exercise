@@ -60,4 +60,4 @@ dmypy.json
 .pytest_cache/
 
 # Generated Tests
-tests/
+output_generated/
