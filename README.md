@@ -8,6 +8,8 @@ The tool is not able to generate schedulable / not schedulable tasksets, it only
 
 **Some tasksets with known schedulability / non-schedulability are placed in the `test_examples` folder so you can better validate your RTA implementation**
 
+**For some test cases, provided solutions are available in the `solution` folder. These solutions are stored in files named solution_X.txt, where X corresponds to the name of the test case.**
+
 ## Configuration File Format
 
 The generator uses a CSV configuration file (check examples in the `config.csv`) with the following columns:
